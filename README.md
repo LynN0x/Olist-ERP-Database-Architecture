@@ -4,6 +4,16 @@ A production-grade, 5-layer relational database architecture built on top of the
 
 This project goes beyond basic SQL queries by implementing a robust backend infrastructure designed for high performance, data integrity, and scalable business operations. The architecture is directly driven by real-world e-commerce domain expertise. Business rules such as exact cancellation limits, partial refund processing, and automated payment auditing are handled securely at the database level.
 
+## 📊 Dataset Information
+**Source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce)
+
+This is a Brazilian ecommerce public dataset of orders made at Olist Store. The dataset contains information on 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allow viewing an order from multiple dimensions: from order status, price, payment, and freight performance to customer location, product attributes, and reviews. 
+
+*(Note: This is real commercial data that has been anonymised by Olist.)*
+
+## 🗂️ Database Schema (ER Diagram)
+![Olist Database Schema](https://i.imgur.com/HRhd2Y0.png)
+
 ## 🏗️ 5-Layer Modular Architecture
 
 1. **Operational Layer (Stored Procedures):** Handles transactional operations with strict ACID compliance (e.g., `sp_CancelOrderFullRefund`, `sp_ProcessPartialRefund`).
